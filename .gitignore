@@ -31,7 +31,6 @@ bin/
 # fabric
 
 run/
-run-server/
 
 # release artifacts handed out manually
 

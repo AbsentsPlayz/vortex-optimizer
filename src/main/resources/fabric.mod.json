@@ -1,29 +1,22 @@
 {
 	"schemaVersion": 1,
-	"id": "nivium",
+	"id": "vortexoptimizer",
 	"version": "${version}",
-	"name": "Nivium",
-	"description": "Advanced Minecraft Server Optimization: continuous tick monitoring, spike attribution and adaptive simulation distance. Server-side; players do not need it.",
+	"name": "Vortex Optimizer",
+	"description": "Measurement-driven client performance work for low-end PCs, designed to complement Sodium.",
 	"authors": [
-		"AbsentsPlayz"
+		"Vortex Optimizer contributors"
 	],
-	"contact": {
-		"sources": "https://github.com/AbsentsPlayz/vortex-optimizer",
-		"issues": "https://github.com/AbsentsPlayz/vortex-optimizer/issues"
-	},
 	"license": "LGPL-3.0-only",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"io.github.nivium.Nivium"
-		],
 		"client": [
-			"io.github.nivium.client.NiviumClient"
+			"io.github.vortexoptimizer.client.VortexOptimizerClient"
 		]
 	},
 	"mixins": [
 		{
-			"config": "nivium.client.mixins.json",
+			"config": "vortexoptimizer.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -34,6 +27,6 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"lithium": "*"
+		"sodium": "*"
 	}
 }
